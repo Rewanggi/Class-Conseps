@@ -1,0 +1,13 @@
+class Lingkaran:
+    def __init__(self, r):
+        self.r = r
+    def HitungLuas(self):
+        l = math.pi * self.r ** 2
+        print('Luas Lingkaran r =', self.r, 'adalah', l )
+    def HitungKeliling(self):
+        k = 2*math.pi*self.r
+        print('Keliling Lingkaran k=', self.r, 'adalah',k)
+import math
+lingk1 = Lingkaran (10)
+lingk1.HitungLuas()
+lingk1.HitungKeliling()
