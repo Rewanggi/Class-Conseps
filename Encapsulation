@@ -1,0 +1,16 @@
+class Manusia:
+    def __init__(self):
+        self.nama = None
+        self.umur = None
+    def setNama (self, nama):
+        self.nama = nama
+    def setUmur (self, umur):
+        if ( umur < 0 ):
+            print ('Umur tidak valid')
+        else:
+            self.umur = umur
+obyek1 = Manusia()
+obyek1.setNama('Bambang Rewanggi')
+obyek1.setUmur(-38)
+print('Nama obyek1: ', obyek1.nama)
+print('Umur obyek1: ', obyek1.umur)
