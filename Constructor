@@ -1,0 +1,17 @@
+class Manusia:
+    def __init__(self, nama, umur):
+        self.nama = nama
+        self.umur = umur
+    def getNama(self):
+        return self.nama
+    def getUmur(self):
+        return self.umur
+        
+    def berjalan(self):
+        print(self.nama, 'Sedang Berjalan')
+    def bernyanyi(self):
+        print(self.nama, 'Sedang Bernyanyi')
+obyek1.Manusia('Bambang Rewanggi', 31)
+obyek1.berjalan()
+obyek2.Manusia('Bambang Rewanggi', 31)
+obyek2.bernyanyi()
