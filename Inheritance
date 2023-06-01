@@ -1,0 +1,27 @@
+class Manusia:
+    def __init__(self, nama, umur):
+        self.nama = nama
+        self.umur = umur
+    def belajar(self):
+        print(self.nama, 'Sedang Belajar')
+    def mengetik(self):
+        print(self.nama, 'Sedang Mengetik')
+    def berumur(self):
+        print(self.nama, 'Sudah Berumur', self.umur)
+class ManusiaSuper(Manusia):
+    #constructor
+    def __init__(self, nama, umur, kemampuan, berat):
+        Manusia.__init__(self, nama, umur)
+        self.kemampuan = kemampuan
+        self.berat = berat
+    #methode
+    def beratbadan(self):
+        print(self.nama, 'memiliki berat badan', self.berat)
+    def unjukKemampuan(self):
+        print(self.nama, 'menguasai', self.kemampuan)
+obyek1 = ManusiaSuper('Bambang','31','Python', '75')
+obyek1.belajar()
+obyek1.berumur()
+obyek1.mengetik()
+obyek1.beratbadan()
+obyek1.unjukKemampuan()
