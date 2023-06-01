@@ -1,0 +1,11 @@
+class StringClass:
+    def __init__(self):
+        self.string = None
+    def getString(self):
+        self.string = input('Masukkan sebuah string: ')
+    def printString(self):
+        print('String yg diinput:', self.string)
+        
+str1= StringClass()
+str1.getString()
+str1.printString()
