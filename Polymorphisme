@@ -1,0 +1,19 @@
+class Manusia:
+    def bergerak(self):
+        print('Manusia bergerak dengan berjalan')
+class Burung:
+    def bergerak(self):
+        print('Burung bergerak dengan terbang')
+class Ikan:
+    def bergerak(self):
+        print('Ikan bergerak dengan berenang')    
+        
+def caraBergerak(makhlukHidup):
+    makhlukHidup.bergerak()
+    
+Bambang = Manusia()
+Parkit = Burung()
+Hiu = Ikan()
+caraBergerak(Bambang)
+caraBergerak(Parkit)
+caraBergerak(Hiu)
